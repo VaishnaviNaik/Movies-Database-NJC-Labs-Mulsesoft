@@ -1,5 +1,5 @@
 import sqlite3
-#
+
 
 #Creating connection to an existing database or create new database if it does not exist
 conn = sqlite3.connect('movie_management.db')
