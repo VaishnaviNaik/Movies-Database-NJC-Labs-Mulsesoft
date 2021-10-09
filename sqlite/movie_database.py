@@ -42,8 +42,8 @@ c.execute("SELECT * FROM Movies")
 
 items = c.fetchall()
 for item in items:
-	#Converting integer to string to use concatenation 
-	 print(str(item[0])+" | "+item[1]+" | "+item[2]+" | "+item[3]+" | "+item[4]+" | "+str(item[5]))
+	#Converting integer to string to use for concatenation 
+	print(str(item[0])+" | "+item[1]+" | "+item[2]+" | "+item[3]+" | "+item[4]+" | "+str(item[5]))
 
 
 print("\n\nMovies where Keanu Reeves is the lead actor:\n")
