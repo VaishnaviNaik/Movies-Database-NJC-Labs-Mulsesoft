@@ -23,7 +23,7 @@ c.execute(""" CREATE TABLE Movies(
 #Inserting single record into table
 c.execute("INSERT INTO Movies VALUES(1,'Midsommar','Jack Reynor','Florence Pugh','Ari Aster',2019)")
 
-#Inserting multiple records at once
+#To insert multiple records at once
 many_movies = [ 
 				(2,'The Matrix','Keanu Reeves','Carrie-Anne Moss','The Wachowskis',1999),
 				(3,'Interstellar','Matthew McConaughey','Anne Hathaway','Christopher Nolan',2014),	
@@ -32,7 +32,7 @@ many_movies = [
 				(6,'Constantine','Keanu Reeves','Rachel Weisz','Francis Lawrence',2005)
 			  ]
 
-#Using '?' as placeholder to insert multiple records at once
+#Using '?' as placeholder and executemany command to insert multiple records at once
 c.executemany("INSERT INTO Movies VALUES(?,?,?,?,?,?)", many_movies)
 
 
