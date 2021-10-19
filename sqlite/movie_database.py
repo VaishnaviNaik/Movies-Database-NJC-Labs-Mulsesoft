@@ -55,3 +55,5 @@ movie_names = c.fetchall()
 for name in movie_names:
 	print(name[0])
 
+conn.commit()
+conn.close()
